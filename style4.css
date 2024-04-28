@@ -1,0 +1,130 @@
+header{
+  background-color: #030216;
+  display: flex;
+  gap: 60px;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+header > h3{
+  color: #fff;
+  width: 30%;
+  line-height: 40px;
+}
+
+header > img {
+  width: 100px; /* Adjust logo size */
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  transition: transform 0.3s ease; /* Add hover transition */
+}
+
+header > img:hover {
+  transform: scale(1.1); /* Scale up on hover */
+  border-color: #ff0000; /* Change border color on hover */
+}
+
+.first-section > nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px 0;
+  
+}
+
+.first-section > nav a {
+  color:#030216;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.first-section > nav a:hover {
+  color: #ff0000;
+}
+
+.second-section{
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  margin-top: 90px;
+}
+
+.second-section > section:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second-section > section:nth-child(1) > div:nth-child(2){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.second-section > section:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second-section > section:nth-child(2) > div{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+.second-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Add shadow */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Add hover transition */
+}
+
+.second-section img:hover {
+  transform: scale(1.05);
+  filter: grayscale(100%) brightness(0.8); /* Add grayscale effect on hover */
+}
+
+footer {
+  background-color: #030216;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px 0;
+}
+
+footer p {
+  max-width: 70%;
+  line-height: 1.6;
+  color: #ffffff; 
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+  header {
+    gap: 10px; /* Further reduce gap for smaller screens */
+    padding: 10px; /* Further reduce padding for smaller screens */
+  }
+
+  header > h3 {
+    width: 50%; /* Adjust width for smaller screens */
+  }
+
+  header > img {
+    width: 60px; /* Adjust logo size for smaller screens */
+    height: 60px;
+  }
+
+  .second-section img {
+    max-width: 90%; /* Adjust max width for smaller screens */
+  }
+}
